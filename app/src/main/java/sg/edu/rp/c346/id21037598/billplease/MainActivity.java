@@ -88,13 +88,13 @@ public class MainActivity extends AppCompatActivity {
                         //check if gst or svc buttons are toggled, return amt
                         if (gstButton.isChecked() && svcButton.isChecked()) {
                             amountDouble *= 1.1;
-                            amountDouble *= 1.07;
+                            amountDouble *= 1.08;
 
                         } else if (!gstButton.isChecked() && svcButton.isChecked())
                             amountDouble *= 1.1;
 
                         else if (gstButton.isChecked() && !svcButton.isChecked())
-                            amountDouble *= 1.07;
+                            amountDouble *= 1.08;
 
                         splitPay = amountDouble / paxInt;
 
