@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 double amountDouble, discountDouble, splitPay;
                 int paxInt;
 
-                // checking if required inputs are empty, if empty, send error msg
+                // checking if required inputs are empty, if empty, send ero
                 if (!amountInput.getText().toString().equals("")) {
                     if (!paxInput.getText().toString().equals("")) {
 
