@@ -4,7 +4,9 @@
     <string name="amount">Amount</string>
     <string name="num_of_pax">Num of Pax</string>
     <string name="svs">SVS</string>
+    <string name="no_svs">NO SVS</string>
     <string name="gst">GST</string>
+    <string name="no_gst">NO GST</string>
     <string name="discount">Discount (%)</string>
     <string name="cash">Cash</string>
     <string name="paynow">PayNow</string>

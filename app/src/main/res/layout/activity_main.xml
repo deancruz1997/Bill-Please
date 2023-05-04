@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOff="@string/svs"
+            android:textOff="@string/no_svs"
             android:textOn="@string/svs" />
 
         <ToggleButton
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOff="@string/gst"
+            android:textOff="@string/no_gst"
             android:textOn="@string/gst" />
     </LinearLayout>
 
