@@ -17,8 +17,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
-            android:text="TextView"
-            android:textAlignment="center" />
+            android:text="@string/bill_please"
+            android:textAlignment="center"
+            android:textSize="28dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -31,20 +33,20 @@
             android:id="@+id/amountText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/amount" />
 
         <EditText
             android:id="@+id/amountInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/numOfPaxText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/num_of_pax" />
 
         <EditText
             android:id="@+id/paxInput"
@@ -66,14 +68,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:textOff="@string/svs"
+            android:textOn="@string/svs" />
 
         <ToggleButton
             android:id="@+id/gstButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:textOff="@string/gst"
+            android:textOn="@string/gst" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,14 +90,15 @@
             android:id="@+id/discountText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/discount" />
 
         <EditText
             android:id="@+id/discountInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -105,42 +110,50 @@
         <RadioGroup
             android:id="@+id/paymentGroup"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/cashButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
+            <RadioButton
+                android:id="@+id/cashButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cash" />
 
-        <RadioButton
-            android:id="@+id/payNowButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RadioButton" />
+            <RadioButton
+                android:id="@+id/payNowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/paynow" />
+        </RadioGroup>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/submitResetContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/splitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/split" />
 
         <Button
             android:id="@+id/resetButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="@string/reset" />
     </LinearLayout>
 
     <LinearLayout
@@ -154,12 +167,12 @@
             android:id="@+id/billOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="" />
 
         <TextView
             android:id="@+id/splitOutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="" />
     </LinearLayout>
 </LinearLayout>
